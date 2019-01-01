@@ -1,0 +1,86 @@
+# jemdoc: menu{MENU}{research.html}
+= Research
+
+*Thesis: Enabling Multimodal Robots via Controllable Adhesives*
+
+Below are some applications I've explored with colleagues for utilizing controllable adhesives on robotic systems. Rather than relying on frictional contact, these robots were endowed with the ability to controllable attach onto surfaces and detach when desired. 
+
+#The function of [https://www.springer.com/us/book/9780792371533 many insects] are tied to the [https://www.springer.com/us/book/9783319457123 variety of attachment mechanisms] found at their tarsus. 
+#Similar to this small, biological creatures, our robots are able to grasp onto objects much larger, and hold on tighter, than otherwise possible with enveloping grasps or frictional contact. 
+
+== Flying, Tugging, Micro Air Vehicles
+~~~
+{}{img_left}{images/glamour1.jpg}{alt text}{250}{}{}
+
+Work with the [https://lis.epfl.ch/ Laboratory of Intelligent Systems] at EPFL during my exchange under a [https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html Swiss scholarship] and [https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876 NSF GROW].
+We combined aerial locomotion with the ability to tug with high forces by attaching onto the environment with adhesives. 
+
+[http://robotics.sciencemag.org/content/3/23/eaau6903 Science Robotics Paper] \n
+[https://news.stanford.edu/2018/10/24/small-flying-robots-haul-heavy-loads/ Stanford News] \n
+[https://www.wired.com/story/wasp-like-drones/ Wired] \n
+[https://www.sciencemag.org/news/2018/10/tiny-wasp-inspired-drone-can-pull-40-times-its-own-weight Science Magazine] \n
+
+~~~
+
+
+== NASA Free Flyer Gripper
+~~~
+{}{img_left}{images/CurvedGripperISS.png}{alt text}{150}{}{}
+
+The Biomimetics and Dexterous Manipulatino Lab is working in collaboration with the Stanford [http://asl.stanford.edu/ Autonomous Systems Lab] on a NASA Early Stage Innovations grant. 
+We are aiming to equip [http://ssl.mit.edu/spheres/ Assistive Free Flyers] (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.  
+
+My contribution has focused on adapting a curved surface, gecko adhesive gripper for use on a free flyer table. 
+Applications may entail grasping the surfaces of uncoorperative objects, with some misalignment and relative velocity.
+To this end, we modeled force constraints of the gripper and dynamics while grasping translating, spinning objects. We experimentally verified the boundaries of successful grasp conditions on a 2D testbed. 
+
+[https://www.youtube.com/watch?v=1yS63Nrak1Q Video] \n
+[https://ieeexplore.ieee.org/document/7989329/ Paper] \n
+[https://ieeexplore.ieee.org/document/7487696/ Paper] \n
+#[http://www.nasa.gov/feature/assistive-free-flyers-with-gecko-inspired-adhesive-appendages-for-automated-logistics-in NASA ESI Grant] \n
+
+
+~~~
+
+
+== KlingOn, a Perching Climbing Robot
+~~~
+{}{img_left}{images/KlingOnv1.png}{alt text}{100}{}{}
+A small multimodal robot capable of being thrown at vetical glass, sticking, and proceeding to climb up.
+Applications envision a quickly deployable robot that you can toss up to a hard-to-reach surface on a structure (ie bridge, dam, skyscraper etc) and have scutter around for a close inspection of a surface. 
+
+#The first platform capable of perching and climbing, I'm using the KlingOn to explore perching strategies for platforms incapable of flight.
+#Biology also offers many exciting examples; I did a short collaboration with folks at Berkeley's [http://polypedal.berkeley.edu/ PolyPEDAL Lab] and outfitting the robot with an inertial appendage to actively control its orientation as it flies ballistically through the air. 
+#I'm also doing dynamic modeling on the role of compliance in the tail. 
+
+[https://ieeexplore.ieee.org/document/6907472/ Paper] \n
+[http://bdml.stanford.edu/Main/MultiModalRobots BDML multimodal robots] \n
+
+~~~
+
+== Perching Micro Air Vehicles
+~~
+{}{img_left}{images/UPenn_Payload.png}{alt text}{150}{}{}
+I was part of our group enabling MAVs to perch and take a rest on vertical surfaces. 
+With a typical mission life lasting on the order of 20 minutes, it is a welcome break for the MAV to collect data or recharge. 
+
+We designed gecko adhesive grippers that will stick to smooth, flat surfaces and collaborated with a controls group at UPenn to demonstrate perching under indoor motion capture. 
+
+[http://www.nytimes.com/2015/05/16/science/robot-part-drone-part-gecko.html?_r=0  NYtimes "What You Get When You Blend a Drone and a Gecko"]\n
+[https://www.youtube.com/watch?v=P1t_cZqgsR8 
+Video on our collaboration with Vijay Kumar's group at UPenn]\n
+[http://bdml.stanford.edu/Main/DynamicRotorcraftPerchingMechanisms 
+BDML perching page] \n
+~~
+
+== Sensing Footpad (MIT Undergraduate Research)
+~~
+{}{img_left}{images/Foot_Annotated_3frame.png}{alt text}{150}{}{}
+
+I designed and manufactured the structure of a soft force sensor for my senior thesis in the Biomimetics and Dexterous Manipulation Lab at MIT. I worked under graduate student Michael Chuah, who implemented the signal processing and neural network to calibrate force readings. The force sensor was intended for use in the paw pad of the MIT Cheetah. 
+
+I used a series of 3D printed molds to cast a woven fiberglass cloth into a polyurethane film that encased a softer silicone. Hall effect sensors were mounted above magnets on the deformable pad and this deflection between these was correlated force. 
+
+[https://ieeexplore.ieee.org/abstract/document/6386239/ Paper]\n
+[https://dspace.mit.edu/handle/1721.1/74436 Undergraduate thesis]
+~~

@@ -1,0 +1,35 @@
+# jemdoc: menu{MENU}{index.html}, analytics{UA-86460148-1}
+= About
+
+~~~
+{}{img_left}{images/SPDLheadshot.jpg}{alt text}{200}{}{IMGLINKTARGET}
+
+Matthew A. Estrada \n
+Recent Ph.D. graduate in
+Mechanical Engineering \n
+[http://bdml.stanford.edu/ Biomimetics and Dexterous Manipulation Lab] \n
+estrada1 \[at\] stanford.edu \n
+418 Panama Mall \n
+MERL Bldg 02-660, Rm 132 \n
+Stanford, CA 94305 \n
+~~~
+
+\n
+
+I am passionate about designing, prototyping and validating robotic hardware for applications where the mechanics of the system are integral to functionality. Most of my projects integrate a mixture of mechanical design, electronics, software and analysis of system dynamics to achieve this. 
+
+I work on perching, grasping and multimodal robots. My work focuses on applying controllable adhesives to enable robotic systems, such as small aerial robots. 
+
+Early inspiration to go into mechanical engineering includes vague memories of bio-inspired robots on television during high school, videos of [https://www.youtube.com/watch?v=XFXj81mvInc Raibert's first hopping robots] from the late '80s, undergraduate research with the [http://biomimetics.mit.edu/ Biomimetic Robotics Lab at MIT], and a broad interest as to why biological systems often beat out robots when it comes to interacting with their environment ([https://www.goodreads.com/book/show/223609.Cats_Paws_and_Catapults my favorite read on this]).
+
+#[docs/EstradaResume.pdf Resume (1 pg)] \n
+#[docs/EstradaResume.pdf 2 page CV (2 pg)] \n
+[https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en Google Scholar] \n
+[https://www.linkedin.com/in/matthew-estrada-765ba012/ LinkedIn] \n
+[http://bdml.stanford.edu/Profiles/MattEstrada BDML profile] \n
+
+== Education 
+
+Ph.D., Mechanical Engineering, Stanford University, 2018 \n
+M.S., Mechanical Engineering, Stanford University, 2015 \n
+B.S., Mechanical Engineering, Massachussetts Institute of Technology, 2012 
