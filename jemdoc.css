@@ -8,9 +8,10 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	/*font-family: Georgia, serif;*/
+	font-family: Helvetica, serif;
 	padding-bottom: 8px;
-	margin: 0;
+	margin: 0 auto;
 	max-width:700px;
 }
 
