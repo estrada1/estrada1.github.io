@@ -1,18 +1,32 @@
 # jemdoc: menu{MENU}{research.html}
 = Research
 
-*Thesis: Enabling Multimodal Robots via Controllable Adhesives*
 
-Below are some applications I've explored with colleagues for utilizing controllable adhesives on robotic systems. Rather than relying on frictional contact, these robots were endowed with the ability to controllably attach onto surfaces and detach when desired. 
 
-#The function of [https://www.springer.com/us/book/9780792371533 many insects] are tied to the [https://www.springer.com/us/book/9783319457123 variety of attachment mechanisms] found at their tarsus. 
-#Similar to this small, biological creatures, our robots are able to grasp onto objects much larger, and hold on tighter, than otherwise possible with enveloping grasps or frictional contact. 
+
+# *Thesis: Enabling Multimodal Robots via Controllable Adhesives*
+
+# This project and those below were some of the applications I'd explored with colleagues for utilizing controllable adhesives on robotic systems. Rather than relying on frictional contact, these robots were endowed with the ability to controllably attach onto surfaces and detach when desired. 
+
+== Amphibious Field Robot  
+~~~
+{}{img_left}{images/krock_swim.png}{alt text}{250}{}{}
+
+I currently lead development of our k-rock 2 sprawling-gait quadruped robot, made up of 21 Dynamixel motors and controlled via an ODROID XU4 running Linux. I implemented a surface swimming gait on the robot via an undulating tail and spine. We are using simulation and laboratory experiments to predict what obstacles the robot can and cannot traverse.  
+
+Engineering work has involved layering ROS onto the C++ controller architecture and revamping our compilation procedure with CMAKE. I recruit and supervise projects, internships, and collaborations on the hardware.
+
+[https://gitlab.com/biorob-krock/krock-controller Gitlab controller repository]
+
+
+~~~
+
 
 == Flying, Tugging, Micro Air Vehicles
 ~~~
 {}{img_left}{images/glamour1.jpg}{alt text}{250}{}{}
 
-Work with the [https://lis.epfl.ch/ Laboratory of Intelligent Systems] at EPFL during my exchange under a [https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html Swiss scholarship] and [https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876 NSF GROW].
+Work with the [https://lis.epfl.ch/ Laboratory of Intelligent Systems] at EPFL during my PhD exchange under a [https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html Swiss scholarship] and [https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876 NSF GROW].
 We combined aerial locomotion with the ability to tug with high forces by attaching onto the environment with adhesives. 
 
 [http://robotics.sciencemag.org/content/3/23/eaau6903 Science Robotics Paper] \n
@@ -30,11 +44,6 @@ We combined aerial locomotion with the ability to tug with high forces by attach
 [http://blogs.discovermagazine.com/d-brief/2018/10/24/wasp-drones-pull/ Discover Magazine Blog] \n
 
 
-
-
-
-
-
 ~~~
 
 
@@ -42,11 +51,11 @@ We combined aerial locomotion with the ability to tug with high forces by attach
 ~~~
 {}{img_left}{images/CurvedGripperISS.png}{alt text}{150}{}{}
 
-The Biomimetics and Dexterous Manipulatino Lab is working in collaboration with the Stanford [http://asl.stanford.edu/ Autonomous Systems Lab] on a NASA Early Stage Innovations grant. 
-We are aiming to equip [http://ssl.mit.edu/spheres/ Assistive Free Flyers] (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.  
+Collaboration between the The Biomimetics and Dexterous Manipulation Lab and [http://asl.stanford.edu/ Autonomous Systems Lab] on a NASA Early Stage Innovations grant. 
+We were aiming to equip [http://ssl.mit.edu/spheres/ Assistive Free Flyers] (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.  
 
-My contribution has focused on adapting a curved surface, gecko adhesive gripper for use on a free flyer table. 
-Applications may entail grasping the surfaces of uncoorperative objects, with some misalignment and relative velocity.
+My contribution focused on adapting a curved surface, gecko adhesive gripper for use on a free flyer table. 
+Applications may entail grasping the surfaces of uncooperative objects, with some misalignment and relative velocity.
 To this end, we modeled force constraints of the gripper and dynamics while grasping translating, spinning objects. We experimentally verified the boundaries of successful grasp conditions on a 2D testbed. 
 
 [https://www.youtube.com/watch?v=1yS63Nrak1Q Video] \n
@@ -58,11 +67,12 @@ To this end, we modeled force constraints of the gripper and dynamics while gras
 ~~~
 
 
-== KlingOn, a Perching Climbing Robot
+== KlingOn, a Perching Climbing Prototype
 ~~~
 {}{img_left}{images/KlingOnv1.png}{alt text}{100}{}{}
-A small multimodal robot capable of being thrown at vetical glass, sticking, and proceeding to climb up.
-Applications envision a quickly deployable robot that you can toss up to a hard-to-reach surface on a structure (ie bridge, dam, skyscraper etc) and have scutter around for a close inspection of a surface. 
+A small multimodal prototype capable of being thrown at vertical glass, sticking, and proceeding to climb up.
+This was an challenge in mechanically coordinating a climbing gait with a single actuator, which ultimately involved linkages, latches, and cams. 
+# Applications envision a quickly deployable robot that you can toss up to a hard-to-reach surface on a structure (ie bridge, dam, skyscraper etc) and have scutter around for a close inspection of a surface. 
 
 #The first platform capable of perching and climbing, I'm using the KlingOn to explore perching strategies for platforms incapable of flight.
 #Biology also offers many exciting examples; I did a short collaboration with folks at Berkeley's [http://polypedal.berkeley.edu/ PolyPEDAL Lab] and outfitting the robot with an inertial appendage to actively control its orientation as it flies ballistically through the air. 
@@ -92,10 +102,14 @@ BDML perching page] \n
 ~~
 {}{img_left}{images/Foot_Annotated_3frame.png}{alt text}{150}{}{}
 
-I designed and manufactured the structure of a soft force sensor for my senior thesis in the Biomimetics and Dexterous Manipulation Lab at MIT. I worked under graduate student Michael Chuah, who implemented the signal processing and neural network to calibrate force readings. The force sensor was intended for use in the paw pad of the MIT Cheetah. 
+I designed and manufactured the structure of a soft force sensor for my senior thesis in the Biomimetics and Dexterous Manipulation Lab at MIT. I was supervised by (then) graduate student Michael Chuah, who implemented the signal processing and neural network to calibrate force readings. The force sensor was intended for use in the paw pad of the MIT Cheetah. 
 
 I used a series of 3D printed molds to cast a woven fiberglass cloth into a polyurethane film that encased a softer silicone. Hall effect sensors were mounted above magnets on the deformable pad and this deflection between these was correlated force. 
 
 [https://ieeexplore.ieee.org/abstract/document/6386239/ Paper]\n
 [https://dspace.mit.edu/handle/1721.1/74436 Undergraduate thesis]
 ~~
+
+
+#The function of [https://www.springer.com/us/book/9780792371533 many insects] are tied to the [https://www.springer.com/us/book/9783319457123 variety of attachment mechanisms] found at their tarsus. 
+#Similar to this small, biological creatures, our robots are able to grasp onto objects much larger, and hold on tighter, than otherwise possible with enveloping grasps or frictional contact. 
