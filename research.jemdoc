@@ -10,13 +10,14 @@
 
 == Amphibious Field Robot  
 ~~~
-{}{img_left}{images/krock_swim.png}{alt text}{250}{}{}
+{}{img_left}{images/krock-2-arche-stand.jpg}{alt text}{250}{}{}
 
 I currently lead development of our k-rock 2 sprawling-gait quadruped robot, made up of 21 Dynamixel motors and controlled via an ODROID XU4 running Linux. I implemented a surface swimming gait on the robot via an undulating tail and spine. We are using simulation and laboratory experiments to predict what obstacles the robot can and cannot traverse.  
 
-Engineering work has involved layering ROS onto the C++ controller architecture and revamping our compilation procedure with CMAKE. I recruit and supervise projects, internships, and collaborations on the hardware.
+Engineering work has involved layering ROS onto the C++ controller architecture and revamping our compilation procedure with CMake. I recruit and supervise projects, internships, and collaborations on the hardware.
 
-[https://gitlab.com/biorob-krock/krock-controller Gitlab controller repository]
+[https://gitlab.com/biorob-krock/krock-controller Robot controller repository]\n
+[https://gitlab.com/biorob-krock/idsia-traversability Traversability estimation repo] (IDSIA collaboration)
 
 
 ~~~
@@ -49,7 +50,7 @@ We combined aerial locomotion with the ability to tug with high forces by attach
 
 == NASA Free Flyer Gripper
 ~~~
-{}{img_left}{images/CurvedGripperISS.png}{alt text}{150}{}{}
+{}{img_left}{images/gripper_annotated.png}{alt text}{250}{}{}
 
 Collaboration between the The Biomimetics and Dexterous Manipulation Lab and [http://asl.stanford.edu/ Autonomous Systems Lab] on a NASA Early Stage Innovations grant. 
 We were aiming to equip [http://ssl.mit.edu/spheres/ Assistive Free Flyers] (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.  
@@ -69,7 +70,7 @@ To this end, we modeled force constraints of the gripper and dynamics while gras
 
 == KlingOn, a Perching Climbing Prototype
 ~~~
-{}{img_left}{images/KlingOnv1.png}{alt text}{100}{}{}
+{}{img_left}{images/klingon_glamour.jpg}{alt text}{150}{}{}
 A small multimodal prototype capable of being thrown at vertical glass, sticking, and proceeding to climb up.
 This was an challenge in mechanically coordinating a climbing gait with a single actuator, which ultimately involved linkages, latches, and cams. 
 # Applications envision a quickly deployable robot that you can toss up to a hard-to-reach surface on a structure (ie bridge, dam, skyscraper etc) and have scutter around for a close inspection of a surface. 
