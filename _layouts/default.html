@@ -1,69 +1,185 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XJKZPN8CJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2XJKZPN8CJ');
+  </script>
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+  <title>Matt Estrada</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="author" content="Matt Estrada" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
 
-        <p>
-          <!-- <center> -->
-          <!-- {{ site.description | default: site.github.project_tagline }} -->
-          Research Scientist @ The AI Institute
-          <!-- </center> -->
-        </p>
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
 
-        <!-- <p>
-          <a href="https://www.linkedin.com/in/matthew-estrada-765ba012/">LinkedIn</a> /
-          <a href="https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en">Google Scholar </a> 
-        </p> -->
+        <!-- PROFILE SECTION -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
+              <h1>Matt Estrada</h1>
 
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+              <p>I am a Research Scientist at <a href="https://theaiinstitute.com">The AI Institute</a> in Cambridge, Massachusetts. I am a roboticist passionate about systems leveraging contact with their environment.</p>
 
-        <p>
-          <a href="/index.html">About</a><br>
-          <a href="/pages/education.html">Education</a><br>
-          <a href="/pages/industry.html">Industry</a><br>
-          <a href="/pages/research.html">Research</a><br>
-          <!-- <a href="/pages/teaching.html">Teaching</a><br> -->
-          <!-- <a href="/pages/archive.html">Archive</a> -->
-        </p>
+              <p>I've been a robotics software developer spanning the control and planning stack at startups for <a href="https://www.relativityspace.com/">manufacturing</a> and <a href="https://agilityrobotics.com/">warehouse</a> floors. I'm a reformed academic; I completed my PhD with the <a href="http://bdml.stanford.edu/">Biomimetics and Dexterous Manipulation Lab</a> at Stanford University and lived several years in Lausanne, Switzerland working as a researcher at <a href="https://www.epfl.ch/en/">EPFL</a> with the <a href="https://www.epfl.ch/labs/biorob/">BioRobotics Laboratory</a>.</p>
 
-        <!-- {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %} -->
+              <p style="text-align:center">
+                <a href="https://www.linkedin.com/in/matthew-estrada-765ba012/">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en">Google Scholar</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%;border-radius:50%;" alt="profile photo" src="/assets/img/biorobhike_headshot.jpg">
+            </td>
+          </tr>
+        </table>
 
-      </header>
-      <section>
-        <br><br>
+        <!-- RESEARCH SECTION -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>See <a href="https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en">Google Scholar</a> for a complete list of publications.</p>
+            </td>
+          </tr>
+        </table>
 
-      {{ content }}
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {% if post.authors %}
+              {{post.authors}}
+              <br>
+              {% endif %}
+              {% if post.venue %}
+              <em>{{post.venue}}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+              <br>
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a>
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
 
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
+        <br><br><br>
+
+        <!-- INDUSTRY SECTION -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Industry</h2>
+              <p>Professional robotics work in manufacturing and warehouse automation.</p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'industry' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.website %}
+              <a href="{{post.website}}">website</a>
+              {% endif %}
+              {% if post.patent %}
+              / <a href="{{post.patent}}">patent</a>
+              {% endif %}
+              {% if post.video %}
+              / <a href="{{post.video}}">video</a>
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <br><br><br>
+
+        <!-- EDUCATION SECTION -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Education</h2>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          {% for post in site.posts reversed %}
+          {% for cat in post.categories %}
+          {% if cat == 'education' %}
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              {{ post.content }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <!-- FOOTER -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                Design inspired by <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
 </html>

@@ -1,6 +1,41 @@
+# Site Settings
+name: Matt Estrada
 title: Matt Estrada
-logo: /assets/img/biorobhike_headshot.jpg
 description: Research Scientist at the AI Institute
-show_downloads: true
+logo: /assets/img/biorobhike_headshot.jpg
+url: https://estrada1.github.io
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass Settings
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Analytics
 google_analytics: G-2XJKZPN8CJ
-theme: jekyll-theme-minimal
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - pages/
+
+# Collections defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
