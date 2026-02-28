@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <div class="inner">
-          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
 
           {% if site.logo %}
             <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -28,7 +28,6 @@
 
           <p>
             <a href="/index.html">About</a> /
-            <a href="/pages/education.html">Education</a> /
             <a href="/pages/industry.html">Industry</a> /
             <a href="/pages/research.html">Research</a>
           </p>
