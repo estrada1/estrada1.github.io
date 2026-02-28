@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Stanford ME218: Smart Product Design"
+date: 2013-01-01
+image: /images/218Bbot.jpg
+categories: research
+author: "Matt Estrada"
+website: "http://combatbybatdog.weebly.com/"
+video: "https://www.youtube.com/watch?v=9w4HHpkAdsU&feature=youtu.be"
+---
+
+Three-quarter, project-based graduate course on prototyping embedded systems. Each quarter concluded with intensive final projects completed in teams of four, including an interactive Batman-themed arcade game with IR sensors and accelerometers, an autonomous battleship competition robot, and a wirelessly controlled rover using event-driven software framework with SPI communication.

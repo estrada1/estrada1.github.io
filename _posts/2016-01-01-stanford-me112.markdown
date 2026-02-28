@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Stanford ME112: Mechanical Systems Design"
+date: 2016-01-01
+image: /images/BiomechanicalCreatures.png
+categories: research
+author: "Matt Estrada"
+paper: "https://link.springer.com/chapter/10.1007/978-3-319-63537-8_47"
+video: "https://www.youtube.com/watch?v=Ci7ZCVXoLwg"
+---
+
+Teaching assistant and head TA under advisor Mark Cutkosky for winter quarters 2014 and 2016. Class combined problem sets, structured labs, and two projects teaching gears, DC motors, linkage design, and system efficiencies. Students built lego-crawlers and biomimetic final projects, tracing energy flow from battery to useful motion.

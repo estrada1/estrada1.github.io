@@ -30,13 +30,14 @@
             <td style="padding:2.5%;width:60%;vertical-align:middle">
               <h1>Matt Estrada</h1>
 
-              <p>I am a Research Scientist at <a href="https://theaiinstitute.com">The AI Institute</a> in Cambridge, Massachusetts. I am a roboticist passionate about systems leveraging contact with their environment.</p>
+              <p>I am a Roboticist / Research Scientist at <a href="https://theaiinstitute.com">The AI Institute</a> in Cambridge, Massachusetts. I am passionate about systems leveraging contact with their environment, currently focused on humanoid manipulation.</p>
 
               <p>I've been a robotics software developer spanning the control and planning stack at startups for <a href="https://www.relativityspace.com/">manufacturing</a> and <a href="https://agilityrobotics.com/">warehouse</a> floors. I'm a reformed academic; I completed my PhD with the <a href="http://bdml.stanford.edu/">Biomimetics and Dexterous Manipulation Lab</a> at Stanford University and lived several years in Lausanne, Switzerland working as a researcher at <a href="https://www.epfl.ch/en/">EPFL</a> with the <a href="https://www.epfl.ch/labs/biorob/">BioRobotics Laboratory</a>.</p>
 
               <p style="text-align:center">
                 <a href="https://www.linkedin.com/in/matthew-estrada-765ba012/">LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/estrada1">Github</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -44,61 +45,6 @@
             </td>
           </tr>
         </table>
-
-        <!-- RESEARCH SECTION -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>See <a href="https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en">Google Scholar</a> for a complete list of publications.</p>
-            </td>
-          </tr>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {% if post.authors %}
-              {{post.authors}}
-              <br>
-              {% endif %}
-              {% if post.venue %}
-              <em>{{post.venue}}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
-              <br>
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a>
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-
-        <br><br><br>
 
         <!-- INDUSTRY SECTION -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -143,22 +89,51 @@
 
         <br><br><br>
 
-        <!-- EDUCATION SECTION -->
+        <!-- RESEARCH SECTION -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Education</h2>
+              <h2>Research</h2>
             </td>
           </tr>
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts reversed %}
+          {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'education' %}
+          {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              {{ post.content }}
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.title}}</h3>
+              <br>
+              {% if post.authors %}
+              {{post.authors}}
+              <br>
+              {% endif %}
+              {% if post.venue %}
+              <em>{{post.venue}}</em>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+              <br>
+              {% endif %}
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}">website</a>
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
             </td>
           </tr>
           {% endif %}
