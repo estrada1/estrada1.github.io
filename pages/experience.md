@@ -2,6 +2,50 @@
 layout: default
 ---
 
+## Industry
+
+### Agility Robotics
+
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/agility-tote.jpg" alt="agility" style="width:100%;">
+</div>
+<div markdown="1">
+[Agility Robotics](https://agilityrobotics.com/) manipulation team contributing to the autonomy stack for humanoid robot Digit, focused on manipulation tasks for large items in warehouse applications.
+</div>
+</div>
+
+---
+
+### Relativity Space
+
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/relativity-print-assemblymag.jpg" alt="relativity" style="width:100%;">
+</div>
+<div markdown="1">
+[Relativity Space](https://www.relativityspace.com/) Robotics Software team working creating our in-house stack for large area additive manufacturing process to print rocket bodies.
+</div>
+</div>
+
+---
+
+### Disney
+
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/disney-patent.png" alt="disney" style="width:100%;">
+</div>
+<div markdown="1">
+Short project with [Disney Research](https://la.disneyresearch.com/) focused on alternative modes of balance for legged locomotion.
+
+- [Patent](https://patentimages.storage.googleapis.com/13/37/91/ee6a2cffc35ddb/US11292126.pdf)
+- [Video clip](https://youtu.be/lPqzLE4KjhI?si=VLVaysxmdT8maLOF&t=364) - adjacent project using parts of my stabilizing prototype.
+</div>
+</div>
+
+---
+
 ## Research
 
 See [Google Scholar](https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en) for a complete list of publications.
@@ -10,8 +54,10 @@ See [Google Scholar](https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=e
 
 ### Amphibious Field Robot
 
-<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;" markdown="1">
-<img src="../assets/img/krock-2-arche-stand.jpg" alt="krock-2" style="width:360px; flex-shrink:0;">
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/krock-2-arche-stand.jpg" alt="krock-2" style="width:100%;">
+</div>
 <div markdown="1">
 I was the maintainer continuing development of our k-rock 2 sprawling-gait quadruped robot, made up of 21 Dynamixel motors and controlled via an ODROID XU4 running Linux. I implemented a surface swimming gait on the robot via an undulating tail and spine. We are using simulation and laboratory experiments to predict what obstacles the robot can and cannot traverse.
 
@@ -26,8 +72,10 @@ Engineering work has involved layering ROS onto the C++ controller architecture 
 
 ### Flying, Tugging, Micro Air Vehicles
 
-<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;" markdown="1">
-<img src="../assets/img/glamour1.jpg" alt="flycotug" style="width:360px; flex-shrink:0;">
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/glamour1.jpg" alt="flycotug" style="width:100%;">
+</div>
 <div markdown="1">
 Work with the [Laboratory of Intelligent Systems](https://lis.epfl.ch/) at EPFL during my PhD exchange under a [Swiss scholarship](https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html) and [NSF GROW](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876). We combined aerial locomotion with the ability to tug with high forces by attaching onto the environment with adhesives.
 
@@ -44,8 +92,10 @@ Work with the [Laboratory of Intelligent Systems](https://lis.epfl.ch/) at EPFL 
 
 ### NASA Free Flyer Gripper
 
-<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;" markdown="1">
-<img src="../assets/img/gripper_annotated.png" alt="Dynamic grasping" style="width:360px; flex-shrink:0;">
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/gripper_annotated.png" alt="Dynamic grasping" style="width:100%;">
+</div>
 <div markdown="1">
 Collaboration between the Biomimetics and Dexterous Manipulation Lab and [Autonomous Systems Lab](http://asl.stanford.edu/) on a NASA Early Stage Innovations grant. We were aiming to equip [Assistive Free Flyers](http://ssl.mit.edu/spheres/) (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.
 
@@ -62,8 +112,10 @@ My contribution focused on adapting a curved surface, gecko adhesive gripper for
 
 ### Perching Micro Air Vehicles
 
-<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;" markdown="1">
-<img src="../assets/img/UPenn_Payload.png" alt="perching" style="width:360px; flex-shrink:0;">
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/UPenn_Payload.png" alt="perching" style="width:100%;">
+</div>
 <div markdown="1">
 I was part of our group enabling MAVs to perch and take a rest on vertical surfaces. With a typical mission life lasting on the order of 20 minutes, it is a welcome break for the MAV to collect data or recharge.
 
@@ -79,8 +131,10 @@ We designed gecko adhesive grippers that will stick to smooth, flat surfaces and
 
 ### Sensing Footpad (MIT Undergraduate Research)
 
-<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;" markdown="1">
-<img src="../assets/img/Foot_Annotated_3frame.png" alt="footpad" style="width:360px; flex-shrink:0;">
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:250px; flex-shrink:0;">
+<img src="../assets/img/Foot_Annotated_3frame.png" alt="footpad" style="width:100%;">
+</div>
 <div markdown="1">
 I designed and manufactured the structure of a soft force sensor for my senior thesis in the Biomimetics and Dexterous Manipulation Lab at MIT, supervised by (then) graduate student Michael Chuah. The force sensor was intended for use in the paw pad of the MIT Cheetah.
 
