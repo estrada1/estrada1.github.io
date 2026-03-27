@@ -70,7 +70,7 @@ header .inner {
   letter-spacing: 0.4px;
   font-size: 20px;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
 
   a {
@@ -150,6 +150,7 @@ a {
 
   &:hover, &:focus, &:active {
     color: #005580;
+    font-weight: inherit;
   }
 }
 
@@ -213,7 +214,7 @@ pre {
 /* ---- Blog listing ---- */
 .post-list {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 

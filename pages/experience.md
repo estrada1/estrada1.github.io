@@ -2,9 +2,8 @@
 layout: default
 ---
 
-## Industry
 
-### Agility Robotics
+#### Agility Robotics
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
@@ -17,7 +16,7 @@ layout: default
 
 ---
 
-### Relativity Space
+#### Relativity Space
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
@@ -30,7 +29,7 @@ layout: default
 
 ---
 
-### Disney
+#### Disney
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
@@ -46,21 +45,13 @@ Short project with [Disney Research](https://la.disneyresearch.com/) focused on 
 
 ---
 
-## Research
-
-See [Google Scholar](https://scholar.google.com/citations?user=R6kgerwAAAAJ&hl=en) for a complete list of publications.
-
----
-
-### Amphibious Field Robot
+#### Amphibious Field Robot
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
 <img src="../assets/img/krock-2-arche-stand.jpg" alt="krock-2" style="width:100%;">
 </div>
 <div markdown="1">
-_EPFL BioRobotics Laboratory_ | **Matthew A. Estrada**
-
 I was the maintainer continuing development of our k-rock 2 sprawling-gait quadruped robot, made up of 21 Dynamixel motors and controlled via an ODROID XU4 running Linux. I implemented a surface swimming gait on the robot via an undulating tail and spine. We are using simulation and laboratory experiments to predict what obstacles the robot can and cannot traverse.
 
 Engineering work has involved layering ROS onto the C++ controller architecture and revamping our compilation procedure with CMake. I recruit and supervise projects, internships, and collaborations on the hardware.
@@ -72,15 +63,13 @@ Engineering work has involved layering ROS onto the C++ controller architecture 
 
 ---
 
-### Flying, Tugging, Micro Air Vehicles
+#### Flying, Tugging, Micro Air Vehicles
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
 <img src="../assets/img/glamour1.jpg" alt="flycotug" style="width:100%;">
 </div>
 <div markdown="1">
-_Science Robotics_ | **Matthew A. Estrada**
-
 Work with the [Laboratory of Intelligent Systems](https://lis.epfl.ch/) at EPFL during my PhD exchange under a [Swiss scholarship](https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html) and [NSF GROW](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876). We combined aerial locomotion with the ability to tug with high forces by attaching onto the environment with adhesives.
 
 - [Science Robotics Paper](http://robotics.sciencemag.org/content/3/23/eaau6903)
@@ -94,15 +83,13 @@ Work with the [Laboratory of Intelligent Systems](https://lis.epfl.ch/) at EPFL 
 
 ---
 
-### NASA Free Flyer Gripper
+#### NASA Free Flyer Gripper
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
 <img src="../assets/img/gripper_annotated.png" alt="Dynamic grasping" style="width:100%;">
 </div>
 <div markdown="1">
-_NASA Early Stage Innovations_ | **Matthew A. Estrada**
-
 Collaboration between the Biomimetics and Dexterous Manipulation Lab and [Autonomous Systems Lab](http://asl.stanford.edu/) on a NASA Early Stage Innovations grant. We were aiming to equip [Assistive Free Flyers](http://ssl.mit.edu/spheres/) (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.
 
 My contribution focused on adapting a curved surface, gecko adhesive gripper for use on a free flyer table. We modeled force constraints of the gripper and dynamics while grasping translating, spinning objects and experimentally verified the boundaries of successful grasp conditions on a 2D testbed.
@@ -116,14 +103,13 @@ My contribution focused on adapting a curved surface, gecko adhesive gripper for
 
 ---
 
-### Perching Micro Air Vehicles
+#### Perching Micro Air Vehicles
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
 <img src="../assets/img/UPenn_Payload.png" alt="perching" style="width:100%;">
 </div>
 <div markdown="1">
-_Stanford BDML_ | **Matthew A. Estrada**
 
 I was part of our group enabling MAVs to perch and take a rest on vertical surfaces. With a typical mission life lasting on the order of 20 minutes, it is a welcome break for the MAV to collect data or recharge.
 
@@ -137,16 +123,15 @@ We designed gecko adhesive grippers that will stick to smooth, flat surfaces and
 
 ---
 
-### Sensing Footpad (MIT Undergraduate Research)
+#### Force Sensing Footpad 
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
 <div style="width:250px; flex-shrink:0;">
 <img src="../assets/img/Foot_Annotated_3frame.png" alt="footpad" style="width:100%;">
 </div>
 <div markdown="1">
-_MIT Biomimetics Robotics Lab_ | **Matthew A. Estrada**, Michael Chuah
 
-I designed and manufactured the structure of a soft force sensor for my senior thesis in the Biomimetics and Dexterous Manipulation Lab at MIT, supervised by (then) graduate student Michael Chuah. The force sensor was intended for use in the paw pad of the MIT Cheetah.
+I designed and manufactured the structure of a soft force sensor for my undergraduate thesis with the Biomimetics and Dexterous Manipulation Lab at MIT. The force sensor was intended for use in the paw pad of the MIT Cheetah.
 
 I used a series of 3D printed molds to cast a woven fiberglass cloth into a polyurethane film that encased a softer silicone. Hall effect sensors were mounted above magnets on the deformable pad and deflection was correlated to force.
 
