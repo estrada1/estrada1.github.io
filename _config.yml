@@ -7,8 +7,8 @@ nav:
     url: /
   - title: Experience
     url: /pages/experience.html
-  - title: Memos
-    url: /pages/memos.html
+  - title: Posts
+    url: /pages/posts.html
 
 plugins:
   - jekyll-seo-tag

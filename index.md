@@ -9,7 +9,7 @@ layout: default
     145 Broadway<br>
     Cambridge, MA 02142</p>
     <br>
-    <table style="border:none; margin:0; font-size:inherit;">
+    <table style="border:none; margin:0; font-size:inherit; line-height:1.2;">
       <tr><td style="border:none; padding:0 1em 0 0;">Ph.D.</td><td style="border:none; padding:0;">Mechanical Engineering, Stanford University</td></tr>
       <tr><td style="border:none; padding:0 1em 0 0;">M.S.</td><td style="border:none; padding:0;">Mechanical Engineering, Stanford University</td></tr>
       <tr><td style="border:none; padding:0 1em 0 0;">B.S.</td><td style="border:none; padding:0;">Mechanical Engineering, MIT</td></tr>
