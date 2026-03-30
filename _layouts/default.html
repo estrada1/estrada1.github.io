@@ -17,11 +17,11 @@
       <header class="site-header">
         <nav class="nav">
           <div class="container">
-            <h1 class="logo"><a href="{{ '/' | relative_url }}">Matt Estrada</a></h1>
+            <h1 class="logo"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
             <ul class="navbar">
-              <li><a href="/index.html">About</a></li>
-              <li><a href="/pages/experience.html">Experience</a></li>
-              <li><a href="/pages/memos.html">Posts</a></li>
+              {% for item in site.nav %}
+              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </nav>

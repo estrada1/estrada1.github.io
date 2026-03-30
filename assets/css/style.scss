@@ -1,11 +1,13 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "fonts";
+@import "rouge-github";
 
-/* =============================================
-   robotmonk-style overrides
-   ============================================= */
+/* ---- Reset / Base ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 :root {
   --color-text: #2c2c2c;
@@ -35,13 +37,17 @@ html, body {
   line-height: 1.6;
 }
 
-/* Remove theme wrapper positioning */
+/* ---- Layout ---- */
 .wrapper {
-  width: 100% !important;
-  max-width: 100% !important;
-  display: block !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  display: block;
+}
+
+.container {
+  padding: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+  font-weight: normal;
 }
 
 /* ---- Header / Nav ---- */
@@ -79,7 +85,6 @@ header .inner {
 }
 
 .logo {
-  float: none;
   flex: 1;
   margin: 0;
   cursor: pointer;
@@ -139,14 +144,6 @@ section {
   min-height: auto !important;
 }
 
-.container {
-  padding: 1.5em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--max-width);
-  font-weight: normal;
-}
-
 /* ---- Typography ---- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-body);
@@ -182,17 +179,20 @@ a {
   }
 }
 
-/* ---- Footer ---- */
-footer {
-  position: static !important;
-  width: auto !important;
-  float: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  background: none !important;
+img {
+  max-width: 100%;
 }
 
+small {
+  font-size: 11px;
+}
+
+dt {
+  color: #444;
+  font-weight: 700;
+}
+
+/* ---- Footer ---- */
 .site-footer {
   padding: 1.25em 0;
   margin-top: 3em;
@@ -245,6 +245,75 @@ pre {
     background: none;
     border: none;
   }
+}
+
+/* ---- Tables ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+  color: #444;
+}
+
+/* ---- HR ---- */
+hr {
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+  margin: 1.25em 0;
+}
+
+/* ---- Blockquote ---- */
+blockquote {
+  padding: 0 0 0 1.25em;
+  margin: 1.25em 0;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  background-color: transparent;
+  border-left: 3px solid var(--color-accent);
+
+  p { margin: 0; }
+}
+
+/* ---- Lists ---- */
+ul, ol {
+  margin-top: 0;
+  margin-left: 1.2em;
+  margin-bottom: 0.75em;
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+li {
+  margin-bottom: 0.15em;
+}
+
+/* ---- Images ---- */
+img {
+  border-radius: 2px;
+}
+
+/* ---- kbd ---- */
+kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
 }
 
 /* ---- Blog listing ---- */
@@ -334,44 +403,6 @@ pre {
 article.post > header {
   border-bottom: none !important;
   margin-bottom: 0;
-}
-
-/* ---- HR ---- */
-hr {
-  border: none;
-  border-bottom: 1px solid var(--color-border);
-  width: 100%;
-  margin: 1.25em 0;
-}
-
-/* ---- Blockquote ---- */
-blockquote {
-  padding: 0 0 0 1.25em;
-  margin: 1.25em 0;
-  color: var(--color-text-secondary);
-  line-height: 1.5;
-  background-color: transparent;
-  border-left: 3px solid var(--color-accent);
-
-  p { margin: 0; }
-}
-
-/* ---- Lists ---- */
-ul, ol {
-  margin-top: 0;
-  margin-left: 1.2em;
-  margin-bottom: 0.75em;
-  list-style-type: square;
-  list-style-position: outside;
-}
-
-li {
-  margin-bottom: 0.15em;
-}
-
-/* ---- Images ---- */
-img {
-  border-radius: 2px;
 }
 
 /* ---- Responsive ---- */

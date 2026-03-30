@@ -2,4 +2,13 @@ title: Matt Estrada
 description: Research Scientist at the AI Institute
 show_downloads: true
 google_analytics: G-2XJKZPN8CJ
-theme: jekyll-theme-minimal
+nav:
+  - title: About
+    url: /
+  - title: Experience
+    url: /pages/experience.html
+  - title: Memos
+    url: /pages/memos.html
+
+plugins:
+  - jekyll-seo-tag
