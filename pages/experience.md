@@ -2,41 +2,72 @@
 layout: default
 ---
 
+<p class="post-list-intro">Highlighted industry and research experiences.</p>
 
-#### Agility Robotics
+### Robotics and AI Institute
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
+<img src="../assets/img/g1-zest.png" alt="g1-zest" style="width:100%;">
+</div>
+<div markdown="1">
+Research Scientist, December 2023 – Present
+
+Whole body and grasping reinforcement learning policy development with deployment onto humanoid platforms. Contributor to pipeline used on G1 and E-Atlas motions for external BD collaboration. Sim-real gap analysis and mitigation including data driven methods, modeling parallel linkage actuators, and experiment analysis pipeline. Simulation, trajectory optimization, and software integration for low-impedance manipulators and end-effectors.
+</div>
+</div>
+
+---
+
+### Agility Robotics
+
+<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/agility-tote.jpg" alt="agility" style="width:100%;">
 </div>
 <div markdown="1">
+Senior Software Engineer — Manipulation Autonomy, November 2022 – November 2023
+
 [Agility Robotics](https://agilityrobotics.com/) manipulation team contributing to the autonomy stack for humanoid robot Digit, focused on manipulation tasks for large items in warehouse applications.
+
+- Requirements-driven development of autonomy behaviors targeted at deployment. Analysis and sensor selection for manipulation metrics.
+- Optimization-based stance generation for whole body control.
+- Managed two direct reports, mentored on development practices and bring-up of experimental hardware.
 </div>
 </div>
 
 ---
 
-#### Relativity Space
+### Relativity Space
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/relativity-print-assemblymag.jpg" alt="relativity" style="width:100%;">
 </div>
 <div markdown="1">
-[Relativity Space](https://www.relativityspace.com/) Robotics Software team working creating our in-house stack for large area additive manufacturing process to print rocket bodies.
+Senior Robotics Software Engineer, June 2021 – October 2022
+
+[Relativity Space](https://www.relativityspace.com/) Robotics Software team building the in-house stack for large area additive manufacturing to print rocket bodies.
+
+- Robot simulation and model definition for IK and motion planning. Sensor hardware integration and online obstacle avoidance.
+- Hard real-time controller running on industrial Kuka arms for large-area additive manufacturing.
+- Spec'ing and integrating instrumentation for controller validation, weld monitoring during prints, and dimensional scanning.
+- Built tooling to provision compute machines, CICD, and standardize Linux development environment.
 </div>
 </div>
 
 ---
 
-#### Disney
+### Disney
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/disney-patent.png" alt="disney" style="width:100%;">
 </div>
 <div markdown="1">
-Short project with [Disney Research](https://la.disneyresearch.com/) focused on alternative modes of balance for legged locomotion.
+Imagineer — "Stuntronics" Team, Feb.–Mar. 2019
+
+Short project with [Disney Research](https://la.disneyresearch.com/) conceiving and building proof-of-concept for alternative methods of dynamic stabilization for legged robots.
 
 - [Patent](https://patentimages.storage.googleapis.com/13/37/91/ee6a2cffc35ddb/US11292126.pdf)
 - [Video clip](https://youtu.be/lPqzLE4KjhI?si=VLVaysxmdT8maLOF&t=364) - adjacent project using parts of my stabilizing prototype.
@@ -45,16 +76,18 @@ Short project with [Disney Research](https://la.disneyresearch.com/) focused on 
 
 ---
 
-#### Amphibious Field Robot
+### Amphibious Field Robot
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/krock-2-arche-stand.jpg" alt="krock-2" style="width:100%;">
 </div>
 <div markdown="1">
-I was the maintainer continuing development of our k-rock 2 sprawling-gait quadruped robot, made up of 21 Dynamixel motors and controlled via an ODROID XU4 running Linux. I implemented a surface swimming gait on the robot via an undulating tail and spine. We are using simulation and laboratory experiments to predict what obstacles the robot can and cannot traverse.
+EPFL Biorobotics Lab — Collaborateur Scientifique, April 2019 – May 2021
 
-Engineering work has involved layering ROS onto the C++ controller architecture and revamping our compilation procedure with CMake. I recruit and supervise projects, internships, and collaborations on the hardware.
+Lead maintainer of amphibious, sprawling gait, 21 DoF robot for locomotion across rough terrain. C++ swimming locomotion controller, refactor and CMake compilation, integrated ROS Noetic for experiment data collection. Robotics lead for IDSIA collaboration for gait-dependent traversability CNN estimator pipeline across rough terrain.
+
+Recruited and supervised 5 Master's student projects and 3 internships, managed NCCR and ARCHE program reporting.
 
 - [Robot controller repository](https://gitlab.com/biorob-krock/krock-controller)
 - [Traversability estimation repo](https://gitlab.com/biorob-krock/idsia-traversability) (IDSIA collaboration)
@@ -63,14 +96,16 @@ Engineering work has involved layering ROS onto the C++ controller architecture 
 
 ---
 
-#### Flying, Tugging, Micro Air Vehicles
+### Flying, Tugging, Micro Air Vehicles
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/glamour1.jpg" alt="flycotug" style="width:100%;">
 </div>
 <div markdown="1">
-Work with the [Laboratory of Intelligent Systems](https://lis.epfl.ch/) at EPFL during my PhD exchange under a [Swiss scholarship](https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html) and [NSF GROW](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876). We combined aerial locomotion with the ability to tug with high forces by attaching onto the environment with adhesives.
+Stanford BDML — Graduate Research Assistant, Sept. 2012 – Aug. 2018
+
+Designed and demonstrated 100-gram aerial vehicles outfitted with controllable adhesives, allowing them to tug up to 4 kg. Manually operated two vehicles to demonstrate opening a door during exchange at [EPFL LIS](https://lis.epfl.ch/) under a [Swiss scholarship](https://www.sbfi.admin.ch/sbfi/en/home/bildung/scholarships-and-grants/swiss-government-excellence-scholarships-for-foreign-scholars-an.html) and [NSF GROW](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876).
 
 - [Science Robotics Paper](http://robotics.sciencemag.org/content/3/23/eaau6903)
 - [Stanford News](https://news.stanford.edu/2018/10/24/small-flying-robots-haul-heavy-loads/)
@@ -83,37 +118,14 @@ Work with the [Laboratory of Intelligent Systems](https://lis.epfl.ch/) at EPFL 
 
 ---
 
-#### NASA Free Flyer Gripper
+### Perching Micro Air Vehicles
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
-<img src="../assets/img/gripper_annotated.png" alt="Dynamic grasping" style="width:100%;">
-</div>
-<div markdown="1">
-Collaboration between the Biomimetics and Dexterous Manipulation Lab and [Autonomous Systems Lab](http://asl.stanford.edu/) on a NASA Early Stage Innovations grant. We were aiming to equip [Assistive Free Flyers](http://ssl.mit.edu/spheres/) (AFFs), small robots on the International Space Station, with gecko-gripper appendages to aid astronauts.
-
-My contribution focused on adapting a curved surface, gecko adhesive gripper for use on a free flyer table. We modeled force constraints of the gripper and dynamics while grasping translating, spinning objects and experimentally verified the boundaries of successful grasp conditions on a 2D testbed.
-
-- [Video](https://www.youtube.com/watch?v=1yS63Nrak1Q)
-- [Paper](https://ieeexplore.ieee.org/document/7989329/)
-- [Paper](https://ieeexplore.ieee.org/document/7487696/)
-- [NASA ESI Grant](http://www.nasa.gov/feature/assistive-free-flyers-with-gecko-inspired-adhesive-appendages-for-automated-logistics-in)
-</div>
-</div>
-
----
-
-#### Perching Micro Air Vehicles
-
-<div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/UPenn_Payload.png" alt="perching" style="width:100%;">
 </div>
 <div markdown="1">
-
-I was part of our group enabling MAVs to perch and take a rest on vertical surfaces. With a typical mission life lasting on the order of 20 minutes, it is a welcome break for the MAV to collect data or recharge.
-
-We designed gecko adhesive grippers that will stick to smooth, flat surfaces and collaborated with a controls group at UPenn to demonstrate perching under indoor motion capture.
+Mechanism design, integration, and failure recovery for dynamic perching of quadrotors on smooth, vertical surfaces. Designed gecko adhesive grippers and collaborated with a controls group at UPenn to demonstrate perching under indoor motion capture.
 
 - [NYTimes — "What You Get When You Blend a Drone and a Gecko"](http://www.nytimes.com/2015/05/16/science/robot-part-drone-part-gecko.html?_r=0)
 - [Video — collaboration with Vijay Kumar's group at UPenn](https://www.youtube.com/watch?v=P1t_cZqgsR8)
@@ -123,19 +135,20 @@ We designed gecko adhesive grippers that will stick to smooth, flat surfaces and
 
 ---
 
-#### Force Sensing Footpad 
+### Force Sensing Footpad
 
 <div style="display:flex; gap:2em; align-items:flex-start; margin-bottom:2em;">
-<div style="width:250px; flex-shrink:0;">
+<div style="width:200px; flex-shrink:0;">
 <img src="../assets/img/Foot_Annotated_3frame.png" alt="footpad" style="width:100%;">
 </div>
 <div markdown="1">
+MIT Biomimetic Robotics Lab — Undergraduate Researcher, Winter 2010 – Spring 2012
 
-I designed and manufactured the structure of a soft force sensor for my undergraduate thesis with the Biomimetics and Dexterous Manipulation Lab at MIT. The force sensor was intended for use in the paw pad of the MIT Cheetah.
-
-I used a series of 3D printed molds to cast a woven fiberglass cloth into a polyurethane film that encased a softer silicone. Hall effect sensors were mounted above magnets on the deformable pad and deflection was correlated to force.
+Designed and fabricated structure of soft force sensor intended for use in the paw pad of the MIT Cheetah robotic quadruped. Used 3D printed molds to cast a woven fiberglass cloth into a polyurethane film encasing a softer silicone. Hall effect sensors were mounted above magnets on the deformable pad and deflection was correlated to force.
 
 - [Paper](https://ieeexplore.ieee.org/abstract/document/6386239/)
+- [video](https://www.youtube.com/watch?v=_6Rvv9s5hko)
 - [Undergraduate thesis](https://dspace.mit.edu/handle/1721.1/74436)
 </div>
 </div>
+
