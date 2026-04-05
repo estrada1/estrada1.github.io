@@ -25,6 +25,10 @@
 }
 
 /* Reset theme's sidebar layout */
+html {
+  scrollbar-gutter: stable;
+}
+
 html, body {
   width: 100%;
   max-width: var(--max-width);
